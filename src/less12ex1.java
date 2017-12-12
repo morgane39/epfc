@@ -14,7 +14,7 @@ public class less12ex1 {
         for (int i = 0; i < tableau.length; i++) {
             tableau[i] = '.';
         }
-
+        Scanner entree = new Scanner(System.in);
         do {
             System.out.print("Tapez A pour ajouter un segment"
                     + " Tapez I pour imprimer le tableau"
@@ -22,7 +22,6 @@ public class less12ex1 {
             choix = input.next();
             switch (choix) {
                 case "A":
-                    Scanner entree = new Scanner(System.in);
                     System.out.print("Quel caractère voulez-vous ajouter ? ");
                     char caractere = entree.next().charAt(0);
                     int fin;
